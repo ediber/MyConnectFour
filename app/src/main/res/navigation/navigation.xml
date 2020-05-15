@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/main1Fragment">
+    <fragment
+        android:id="@+id/main1Fragment"
+        android:name="com.e.myconnectfour.Main1Fragment"
+        android:label="fragment_main1"
+        tools:layout="@layout/fragment_main1" >
+        <action
+            android:id="@+id/action_main1Fragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_main1Fragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.e.myconnectfour.GameFragment"
+        android:label="game_fragment"
+        tools:layout="@layout/game_fragment" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.e.myconnectfour.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>
